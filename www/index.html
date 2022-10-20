@@ -44,6 +44,14 @@
             $('#btnD').click(function(e) {
                 btnDClick(e);
             });
+
+            $('#btnE').click(function(e) {
+                btnEClick(e);
+            });
+
+            $('#btnF').click(function(e) {
+                btnFClick(e);
+            });
         });
 
         function rgbToColor(r, g, b) {
@@ -165,7 +173,8 @@
             $('#btnB').prop('disabled', false);
             $('#btnC').prop('disabled', false);
             $('#btnD').prop('disabled', false);
-
+            $('#btnE').prop('disabled', false);
+            $('#btnF').prop('disabled', false);
         }
 
         // Alarmの処理
@@ -211,6 +220,24 @@
             $("#remain").html("残り時間 : " + period);
         }
 
+        // ButtonEがクリックされた時の処理(追加分)
+        function btnEClick(e) {
+            alarm();
+            active = false;
+            period = 120;
+            $("#time").html("経過時間 : 0");
+            $("#remain").html("残り時間 : " + period);
+        }
+
+        // ButtonFがクリックされた時の処理(追加分)
+        function btnFClick(e) {
+            alarm();
+            active = false;
+            period = 60;
+            $("#time").html("経過時間 : 0");
+            $("#remain").html("残り時間 : " + period);
+        }
+
 
         // 繰り返し実行する処理
         function timer() {
@@ -241,6 +268,8 @@
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
     <button id="btnD">Set3minutes</button>
+    <button id="btnE">2min</button>
+    <button id="btnF">1min</button>
     <input type="number" id="minute" value=0>
     <input type="number" id="second" value=15>
 </body>

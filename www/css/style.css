@@ -67,6 +67,20 @@
         background-color: red;
         color: white;
     }
+
+    #btnE {
+        font-size: 20px;
+        position:absolute; top:510px; left:45%; width:25%; height:60px;
+        background-color:blue;
+        color: white;
+    }
+
+    #btnF {
+        font-size: 20px;
+        position:absolute; top:510px; left:70%; width:28%; height:60px;
+        background-color:gray;
+        color: white;
+    }
     
     #minute {
         font-size: 30px;
