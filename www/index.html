@@ -204,7 +204,11 @@
 
         // ButtonDがクリックされた時の処理(追加分)
         function btnDClick(e) {
-            
+            alarm();
+            active = false;
+            period = 180;
+            $("#time").html("経過時間 : 0");
+            $("#remain").html("残り時間 : " + period);
         }
 
 
@@ -219,6 +223,7 @@
                 if (rest <= 0) {
                     active = false;
                     alarm();
+                    rest = 0;
                 }
             }
         }
@@ -236,7 +241,7 @@
     <button id="btnA">Start</button>
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
-    <button id="btnD">Restart</button>
+    <button id="btnD">Set3minutes</button>
     <input type="number" id="minute" value=0>
     <input type="number" id="second" value=15>
 </body>
