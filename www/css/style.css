@@ -103,3 +103,13 @@
         font-family: Times;
         border-radius: 20px;
     }
+
+    #time::after {
+        content: "秒";
+        color:#ff0000;
+    }
+
+    #remain::after {
+        content: "秒";
+        color:#ff0000;
+    }
