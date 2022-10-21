@@ -66,6 +66,7 @@
         position:absolute; top:510px; left:2%; width:43%; height:60px;
         background-color: red;
         color: white;
+        font-family: selif;
     }
 
     #btnE {
@@ -73,6 +74,7 @@
         position:absolute; top:510px; left:45%; width:25%; height:60px;
         background-color:blue;
         color: white;
+        font-family: fantasy;
     }
 
     #btnF {
@@ -80,6 +82,7 @@
         position:absolute; top:510px; left:70%; width:28%; height:60px;
         background-color:gray;
         color: white;
+        font-family: sans-serif;
     }
     
     #minute {
