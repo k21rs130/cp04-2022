@@ -67,6 +67,7 @@
         background-color: red;
         color: white;
         font-family: selif;
+        border-width: 0.3em 0.3em 0.3em 0.3em;
     }
 
     #btnE {
@@ -83,6 +84,7 @@
         background-color:gray;
         color: white;
         font-family: sans-serif;
+        border-color: red;
     }
     
     #minute {
